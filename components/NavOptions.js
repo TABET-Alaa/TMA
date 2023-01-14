@@ -1,17 +1,24 @@
 import React from 'react'
 import {  Text, View , TouchableOpacity, Image, FlatList} from 'react-native'
 import tw from 'tailwind-react-native-classnames';
+import { Icon } from 'react-native-elements';
 
 const data = [
     {
         id: "123",
-        title: "get a ride",
+        title: "prenez une course",
         image: "https://links.papareact.com/3pn",
         screen: "MapScreen"
     },
     {
         id: "456",
-        title: "get a ride",
+        title: "prenez une course",
+        image: "https://links.papareact.com/3pn",
+        screen: "MapScreen"
+    },
+    {
+        id: "789",
+        title: "prenez une course",
         image: "https://links.papareact.com/3pn",
         screen: "MapScreen"
     }
@@ -32,6 +39,12 @@ const NavOptions = () => {
                     <Text style={tw`mt-2 text-lg font-semibold`}>
                         { item.title}
                     </Text>
+                    <Icon 
+                        type='antdesign'
+                        name = 'arrowright'
+                        color='black'
+                        style={tw `p-2 bg-white rounded-full w-10 mt-4`}
+                    />
                 </TouchableOpacity>
 
             )}
